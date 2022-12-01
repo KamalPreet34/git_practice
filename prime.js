@@ -1,18 +1,14 @@
 @@ -1,16 +1,16@@
 
-let isPrime = true
-if(num>1){
-	
-	for(let i=2; i<num/2;i++){
-		if(num%i == 0){
-			isPrime = false;
-			console.log("No");
-		}else{
-			isPrime = true;
-		}
-	}
-	if(isPrime){
-		
-		console.log("Yes");
-	}
-}
+let count=0;
+    for(let i=1; i<=num; i++){
+        if(num%i===0){
+            count++
+        }
+    }
+    if(count==2){
+        console.log("Yes");
+        
+    }else{
+        console.log("No");
+    }
